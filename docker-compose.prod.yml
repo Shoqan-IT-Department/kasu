@@ -6,7 +6,7 @@ services:
       target: runner
     ports:
       - '127.0.0.1:3060:3000'
-    extra_ports:
+    extra_hosts:
       - "host.docker.internal:172.25.0.1"
     env_file:
       - .env
